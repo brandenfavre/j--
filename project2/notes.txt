@@ -1,0 +1,26 @@
+1. Provide a high-level description (ie, using minimal amount of technical
+   jargon) of the project in no more than 200 words.
+
+   Modified scanner to scan for multiline comments, more operators, reserved words,
+   and long & double literals. Multiline comments checks for /* and then continuously
+   scans the next char, essentially ignoring everything, until finding */ or EOF. Adding
+   more operators was similar to the previous project, just adding tokens to the TokenInfo
+   and adding scanning support. Adding new reserved words consisted of defining the tokens
+   in TokenInfo and then using a Hashtable to store the reserved word image with the reserved
+   word token. Adding the support for long and double literals relied on using Java's Grammar
+   to scan the correct tokens, and in the correct order, in order to validate input as either
+   literals.
+
+2. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+3. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

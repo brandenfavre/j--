@@ -76,7 +76,7 @@ public class GenIsPrime {
         e.addMemberAccessInstruction(INVOKESPECIAL, "java/lang/StringBuffer", "<init>", "()V");
 
         // sb.append(n);
-        e.addNoArgInstruction(ILOAD_1);
+        e.addNoArgInstruction(ILOAD_1); // n
         e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
                 "(I)Ljava/lang/StringBuffer;");
 
@@ -102,11 +102,8 @@ public class GenIsPrime {
         e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
                 "(Ljava/lang/String;)V");
 
-
         // return;
         e.addNoArgInstruction(RETURN);
-
-        /////////////////////////////////////////////////////////////////////////////////////////////////
 
         // private static boolean isPrime(int n) {
         modifiers.clear();
@@ -127,7 +124,7 @@ public class GenIsPrime {
         // i = 2
         e.addLabel("InitializeLoop");
         e.addNoArgInstruction(ICONST_2);
-        e.addNoArgInstruction(ISTORE_1); // Store in next local variable
+        e.addNoArgInstruction(ISTORE_1); // Store in offset 1
 
         // if i > n/i, branch to ReturnTrue
         e.addLabel("CheckLoop");

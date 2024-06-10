@@ -1,0 +1,12 @@
+---
+:id: 249348336
+:submitters:
+- :name: Branden Favre
+  :email: branden.favre001@umb.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2024-04-23 23:10:48.421010000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2024-04-23 16:10:48.421010000 Z
+:status: processed
+:score: 75.04

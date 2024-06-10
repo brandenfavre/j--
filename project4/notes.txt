@@ -1,0 +1,23 @@
+1. Provide a high-level description (ie, using minimal amount of technical
+   jargon) of the project in no more than 200 words.
+
+   Redoing projects 2 and 3 using JavaCC for grammar. Different way in how JavaCC
+   handles optional instances and 0 or more occurrences, not having to rely on if statements
+   and while loops, instead using [] for 0 or 1 occurrence and ()* for 1 or more occurrences.
+   Other than the different ways JavaCC handles grammar, project4 was not really different
+   from projects 2 and 3, in terms of the logic in implementing java grammar to j--.
+
+
+2. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+3. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

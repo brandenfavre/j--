@@ -1,7 +1,13 @@
 1. Provide a high-level description (ie, using minimal amount of technical
    jargon) of the project in no more than 200 words.
 
-   Boolean and int share same JVM instructions
+   For problem 1, learned how to use CLEmitter and how to build a .class file for j-- from executing JVM instructions
+   represented using CLEmitter. Problems 2-4 were similar in adding operators to TokenInfo, modifying the Scanner to
+   scan for these operators properly, then modifying Parser to validate proper use of these operators, and implementing
+   the analyze and codegen methods in the methods corresponding to the operators in the JUnaryExpression and
+   JBinaryExpression classes to construct an AST for each operator using CLEmitter again for representing JVM
+   instructions in codegen and validating the lhs/rhs of the operators were primitive integers in analyze.
+   Figuring out the proper grammar for modifying the parser was gotten from looking at the Java Grammar file.
 
 2. Did you receive help from anyone? List their names, status (classmate, 
    CS451/651 grad, TA, other), and the nature of help received.
@@ -9,9 +15,7 @@
    Name               Status       Help Received
    ----               ------       -------------
 
-
-   https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html    Helped with the different JVM instructions and how they work
-
+   ...                ...          ...
 
 3. List any other comments here. Feel free to provide any feedback on how
    much you learned from doing the assignment, and whether you enjoyed

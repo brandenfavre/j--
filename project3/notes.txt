@@ -1,0 +1,33 @@
+1. Provide a high-level description (ie, using minimal amount of technical
+   jargon) of the project in no more than 200 words.
+
+   Added support for the parsing of different types, operators, statements, exception
+   handling, and interface declarations. For double and long, handled parsing the
+   literals in literal(), and added their type into basicType(). Adding operators
+   was similar to Project1, follow the grammar to implement the operators into the different expression
+   methods. Conditional expression added a method to handle those types of expressions, similar
+   to many other conditional expression methods. Do statement was straightforward, just following
+   the grammar to implement in the statement() method. For statement was more complex, having
+   to use variableDeclarator list to return a single object to encapsulate variable declarations, and
+   following the grammar for the rest. Break and continue were simple, relying on a correct implementation
+   of the For statement. The switchstatement uses the switchBlockStatementGroup() which
+   implements the grammar for switchLabel as well. The default case also needed a empty label so the AST
+   displayed properly. Exception handling was straightforward, following the grammar. Interface was
+   more complicated, but shared similar logic to memberDecl and classBody, so after updating those methods to
+   contain the proper updated grammar, it was straightforward. There was also the need to add the "abstract"
+   modifier to interface methods as all interface methods are implicitly abstract.
+
+
+2. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+3. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Fun.
